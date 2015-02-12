@@ -1,0 +1,135 @@
+
+header{
+  position: relative;
+  @media screen and (max-width: @screen-sm-min) {
+    // position: fixed;
+  }
+  .headline{
+    padding: 20px 0 20px 20px;
+    border-left: 3px solid;
+    margin-top: 20px;
+    h1{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: bold;
+      color: #22313F;
+      font-size: 42px;
+      @media screen and (max-width: @screen-sm-min) {
+        font-size: 28px;
+      }
+    }
+    small{
+      display: inline-block;
+      width: 236px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 100;
+      padding-bottom: 20px;
+      border-bottom: 3px solid;
+    }
+    nav.navbar{
+      float: right;
+      font-family: 'Muli', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      z-index: 1000;
+      @media screen and (max-width: @screen-sm-min) {
+        font-family: 'Muli', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 0px;
+      }
+      .navbar-header{
+        margin: 20px 5px 0 0;
+        position: fixed;
+        top: 13px;
+        right: 12px;
+      }
+      .collapse{
+        margin-top: 20px;
+        width: 290px;
+         @media screen and (min-width: @screen-sm-min) {
+            width: 100%;
+         }
+      }
+      ul{
+        color: #222;
+        li{
+          a{
+            padding: 10px 0 15px 30px;
+          }
+        }
+      }
+    }
+  }
+  .sns{
+    position: absolute;
+    top: 65px;
+    right: 150px;
+    ul{
+      list-style: none;
+      float: right;
+      li{
+        display: inline-block;
+        floft: left;
+      }
+    }
+  }
+  
+}
+section{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  h1{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Muli', sans-serif;
+  }
+}
+.about{
+  h2{
+    display: inline-block;
+    margin-top: 0px;
+    font-family: 'Muli', sans-serif;
+  }
+  h5{
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Muli', sans-serif;
+  }
+  p{
+    font-family: 'Muli', sans-serif;
+  }  
+}
+.work{
+  .thumbnail{
+    padding: 0;
+    border: none;
+    background-color: #222;
+    border-radius: 0px;
+    .caption{
+      color: #ddd;
+    }
+  }
+}
+
+.project{
+  height: 600px;
+  background: url('../images/project-bg.jpg');
+  color: #fff;
+}
+
+footer{
+  position: initial;
+  bottom: 0;
+  padding: 60px;
+  .container{
+    border-top: 1px solid #222;
+    p{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 40px;
+    color: #222;
+  }
+  }
+}
