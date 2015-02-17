@@ -1,180 +1,330 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>humor</title>
     <meta charset="utf-8">
-    <meta name=description content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Git 勉強会</title>
 
     <!-- Bootstrap -->
-    <link href="../assets/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="js/thumbnail.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
   </head>
   <body>
     <header>
       <div class="container">
-        <div id="headerScroll">
-          <div class="logo"></div>
-          <div class="navarea"></div>
-        </div>
-        <div class="headline hidden-sm">
-        <h1>Humor</h1>
-        <small class="hidden-xs">Creative Language Online Shop is a new shopping site on which you can ﬁnd collaborated products with creators and our original art products.</small>
-  
-          <div class="sns hidden-xs">
-            <ul>
-              <li><a href="#"><img class="" src="../assets/images/tw-icon.png"></a></li>
-              <li><a href="#"><img class="" src="../assets/images/tw-icon.png"></a></li>
-              <li><a href="#"><img class="" src="../assets/images/tw-icon.png"></a></li>
-            </ul>
-          </div>
-          <nav id="gNav" class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header hidden-lg hidden-md" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <img class="" src="../assets/images/menu.png">
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav">
-                <li><a class="nav-item" href="#design">About</a></li>
-                <li><a class="nav-item" href="#training">Work</a></li>
-                <li><a class="nav-item" href="#access">Project</a></li>
-                <li><a class="nav-item" href="#access">Contact</a></li>
-                <!-- <li><a class="nav-item" href="#">Blog</a></li> -->
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </nav>
-        </div><!-- headerline -->
-      </div><!-- container -->
+        <h1>Git勉強会</h1>
+        <p>いじっていじっていじり倒しちゃいな！！！</p>
+        <div>sns</div>
+      </div>
     </header>
-
-    <section class="top">
+    
+    <nav class="navbar navbar-default">
       <div class="container">
-      <img class="img-responsive" src="../assets/images/footer.png" height="300" width="1130">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Member</a></li>
+            <li><a href="#">Reference</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      </div>
+    </nav>
+
+    <section class="members">
+      <div class="container">
+        <h1>参加者一覧</h1>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/1200/600" />
+              <div class="caption">
+                <h3>
+                  <span>Name</span>
+                  <!-- ここに名前を書いて -->
+                  Masato Suzuki
+                </h3>
+                <h4>
+                  <span>Job</span>
+                  <!-- ここに職業を書いて -->
+                  Designer
+                </h4>
+                <!-- <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
       </div>
     </section>
-
-    <section class="about">
+    <section>
       <div class="container">
-        <h1>About</h1>
+        <h1>参考ページ</h1>
         <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <img class="img-responsive" src="../assets/images/about-img.jpg">
+          <div class="col-md-4">
+            <div class="jumbotron">
+              <h2>gitでWebサービス開発のコミュニケーションをスマートに！</h2>
+              <p>デザイナー向けのビデオトレーニング(有料 1,980円)</p>
+              <a class="btn btn-primary btn-lg" href="https://github.com/" role="button">Learn more</a>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6">
-          <h2>Masato Suzuki</h2>
-          <h5>/ Art Derecter</h5>
-           <p>シュルレアリスムを独自の解釈で表現する
-          シュールでポップなコラージュ＆グラフィック作品で
-          MELANTRICK HEMLIGHET、AHCAHCUMなどの
-          アパレルブランドとのコラボレーションをはじめ、
-          ブランドビジュアルやCDジャケットのアートワーク
-          など多方面で活躍中。</p>
-          <p>シュルレアリスムを独自の解釈で表現する
-          シュールでポップなコラボレーションをはじめ、
-          ブランドビジュアルやCDジャケットのアートワーク
-          など多方面で活躍中。</p>
+          <div class="col-md-4">
+            <div class="jumbotron">
+              <h2>サルでもわかるGit入門</h2>
+              <p>インストール方法から高度な使い方まで一通り学べます(初心者向け)</p>
+              <a class="btn btn-primary btn-lg" href="http://www.backlog.jp/git-guide/" role="button">Learn more</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="jumbotron">
+              <h2>LearnGitBranching</h2>
+              <p>ゲーム形式でグラフィカルにgitの概念が学べるアプリ</p>
+              <a class="btn btn-primary btn-lg" href="https://github.com/" role="button">Learn more</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="work">
-      <div class="container">
-        <h1>Works</h1>
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img class="img-responsive" src="../assets/images/work-img01.png" height="280" width="450">
-                <div class="caption">
-                  <h3>Design</h3>
-                  <h5>Graphic / Editorial / Web</h5>
-                  <p>アイコンやグラフィック、アヴァンギャルドなものやミニマムなものを得意とする。</p>
-                  <p>ファッションやアパレルブランドなど、カルチャー雑誌のような仕上がり。</p>
-                  <p>HTML5、CSS，jQueryなどを対応。得意なCMSはTumblr。</p>
-                  <a href="#" class="btn btn-primary" role="button">Button</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img class="img-responsive" src="../assets/images/work-img01.png" height="280" width="450">
-                <div class="caption">
-                  <h3>Photograph</h3>
-                  <h5>Portrait / Moves / Nude</h5>
-                  <p>女性専門ポートレート、メランコリー、ショッキング、など。</p>
-                  <p>音楽シーンに必須とするメディア発信、MVなどの制作。</p>
-                  <p>ポルノではなく、ヌード。</p>
-                  <a href="#" class="btn btn-primary" role="button">Button</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img class="img-responsive" src="../assets/images/work-img01.png" height="280" width="450">
-                <div class="caption">
-                  <h3>Media</h3>
-                  <h5>Radio / Music Video</h5>
-                  <p>Creative Language Online Shop (CL-Online Shop) is a new shopping site on which
-                  you can ﬁnd collaborated products with creators and our original art products.
-                  CL-Online Shop handles CL produced original products and CL selected creators’ art products.
-                  Exchanging ideas with various gifted creators, 
-                  CL will release attractive products from CL-Online Shop in future.</p>
-                  <a href="#" class="btn btn-primary" role="button">Button</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>
-
-    <section class="project">
-      <div class="container">
-        <h1>Project</h1>
-        <h3>制服女子好き</h3>
-      <p>Creative Language Online Shop (CL-Online Shop) is a new shopping site on which
-                  you can ﬁnd collaborated products with creators and our original art products.
-                  CL-Online Shop handles CL produced original products and CL selected creators’ art products.
-                  Exchanging ideas with various gifted creators, 
-                  CL will release attractive products from CL-Online Shop in future.</p>
-                  <h3>制服女子好き</h3>
-                  <p>Creative Language Online Shop (CL-Online Shop) is a new shopping site on which
-                  you can ﬁnd collaborated products with creators and our original art products.
-                  CL-Online Shop handles CL produced original products and CL selected creators’ art products.
-                  Exchanging ideas with various gifted creators, 
-                  CL will release attractive products from CL-Online Shop in future.</p>
 
       </div>
-
     </section>
-
-    <section class="contact">
-      <div class="container">
-        <h1>Contact</h1>
-        <p>tsumomah923@gmail.com</p>
-      </div>
-    </section>
-
     <footer>
       <div class="container">
-        <p>Copylight(c)2014 Masato Suzuki Rights Reserved.</p>
+        <p>Thank you!</p>
       </div>
     </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="../assets/javascripts/jquery-1.11.1.min.js"></script>
+    <script>
+      $(".thumbnail img").MyThumbnail(
+      {
+        thumbWidth:220,
+        thumbHeight:312,
+      });
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../assets/javascripts/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
