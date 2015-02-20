@@ -1,1 +1,0 @@
-# tsumomah.github.io

@@ -24,39 +24,38 @@
   <body>
     <header>
       <div class="container">
+        <span>logo</span>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#mem">Member</a></li>
+                <li><a href="#ref">Reference</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid <--></-->
+        </nav>
         <h1>Git勉強会</h1>
         <p>いじっていじっていじり倒しちゃいな！！！</p>
         <div>sns</div>
       </div>
     </header>
-    
-    <nav class="navbar navbar-default">
-      <div class="container">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Member</a></li>
-            <li><a href="#">Reference</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-      </div>
-    </nav>
-
-    <section class="members">
+    <section id="mem" class="members">
       <div class="container">
-        <h1>参加者一覧</h1>
+        <h1 class="text-center">We Are Github Players</h1>
+        <p class="muted text-center">It's possible to run after history.</p>
         <div class="row">
           <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
@@ -280,29 +279,29 @@
           </div>
       </div>
     </section>
-    <section>
+    <section id="ref" class="reference">
       <div class="container">
-        <h1>参考ページ</h1>
+        <h1 class="text-center">Reference</h1>
         <div class="row">
           <div class="col-md-4">
             <div class="jumbotron">
               <h2>gitでWebサービス開発のコミュニケーションをスマートに！</h2>
               <p>デザイナー向けのビデオトレーニング(有料 1,980円)</p>
-              <a class="btn btn-primary btn-lg" href="https://github.com/" role="button">Learn more</a>
+              <a class="btn btn-primary btn-lg" href="https://github.com/" role="button">Go Site !</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="jumbotron">
               <h2>サルでもわかるGit入門</h2>
               <p>インストール方法から高度な使い方まで一通り学べます(初心者向け)</p>
-              <a class="btn btn-primary btn-lg" href="http://www.backlog.jp/git-guide/" role="button">Learn more</a>
+              <a class="btn btn-primary btn-lg" href="http://www.backlog.jp/git-guide/" role="button">Go Site !</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="jumbotron">
               <h2>LearnGitBranching</h2>
               <p>ゲーム形式でグラフィカルにgitの概念が学べるアプリ</p>
-              <a class="btn btn-primary btn-lg" href="https://github.com/" role="button">Learn more</a>
+              <a class="btn btn-primary btn-lg" href="https://github.com/" role="button">Go Site !</a>
             </div>
           </div>
         </div>
@@ -311,19 +310,14 @@
     </section>
     <footer>
       <div class="container">
-        <p>Thank you!</p>
+        <span class="mega-octicon octicon-mark-github"></span>
+        <p>&copy; 2015 Git Players, All rights reserved.</p>
       </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-    <script>
-      $(".thumbnail img").MyThumbnail(
-      {
-        thumbWidth:220,
-        thumbHeight:312,
-      });
-    </script>
+   
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>

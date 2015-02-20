@@ -8,18 +8,64 @@ section{
   margin: 120px auto;
 }
 
+section h1{
+  margin-bottom: 40px;
+}
+
 .navbar-default{
    background: none; 
    border: none; 
 }
 .navbar-right{
-  position: fixed;
+ /* position: fixed;
   top: 10px;
-  right: 150px;
+  right: 150px;*/
   font-size: 20px;
   z-index: 10;  
 }
+@media (min-width: 680px) {
+  .navbar-right{
+    position: fixed;
+    top: 10px;
+    right: 150px;
+    font-size: 20px;
+    z-index: 10;  
+  }
+}
+.navbar-collapse{
+    position: fixed;
+    top: 68px;
+    left: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 21;
+    background-color: rgb(255, 255, 255);
+  }
 
+.navbar-toggle{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    z-index: 21;
+    background-color: rgb(255, 255, 255);
+  }
+@media (min-width: 680px) {
+  .navbar-toggle{
+    display: none;
+  }
+}
+
+.members h1{
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.members .muted{
+  font-size: 16px;
+  color: #9A9A9A;
+  margin-bottom: 40px;
+}
 .thumbnail{
   position: relative;
   padding: 0;
@@ -53,13 +99,48 @@ section{
   margin-right: 10px;
 }
 
+.reference .jumbotron{
+  position: relative;
+  min-height: 310px;
+  padding: 20px;
+  color: #373d41;
+  background-color: #f9f9f9;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+.jumbotron h2{
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.jumbotron p{
+  font-size: 18px;
+}
+.jumbotron a{
+  position: absolute;
+  bottom: 10px;
+  left: 130px;
+  display: block;
+}
+.jumbotron .btn{
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+.btn-primary{
+  color: #2e6da4;
+  background: none;
+  border: solid 3px #2e6da4;
+}
+.octicon-mark-github:before {
+content: '\f00a';
+}
 footer{
   background: #2e3438;
   text-align: center;
-  margin: 40px 0 0 0;
-  height: 80px;
+  margin-top: 40px;
+  padding: 60px;
 }
 footer p{
-  font-size: 14px;
+  font-size: 18px;
   padding-top: 30px;
 }
