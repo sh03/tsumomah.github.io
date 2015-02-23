@@ -136,8 +136,13 @@ header h1{
 .jumbotron a{
   position: absolute;
   bottom: 10px;
-  left: 130px;
+  left: 100px;
   display: block;
+}
+@media (min-width: 680px) {
+  .jumbotron a{
+    left: 130px;
+  }
 }
 .jumbotron .btn{
   -webkit-border-radius: 0;
