@@ -14,6 +14,31 @@ section h1{
 header h1{
   font-size: 24px;
 }
+
+.thumbnail{
+  display: inline-block;
+    text-decoration: none;
+    line-height: 54px;
+    outline: none;
+}
+.thumbnail:before,
+.thumbnail:after {
+  position: absolute;
+  z-index: 30;
+  display: block;
+  content: '';
+}
+.thumbnail,
+.thumbnail:before,
+.thumbnail:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/*nav*/
 .navbar-default{
    background-color: #2e3438; 
    border: none; 
@@ -21,13 +46,9 @@ header h1{
    position: fixed;
    top:0;
    width: 100%;
-   
     z-index: 30;
 }
 .navbar-right{
- /* position: fixed;
-  top: 10px;
-  right: 150px;*/
   font-size: 20px;
   z-index: 10;  
 }
@@ -39,21 +60,45 @@ header h1{
     z-index: 10;  
   }
 }
-.navbar-collapse{
-    text-align: center;
-    z-index: 21;
-  }
+
+.navbar-collapse a{
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+.navbar-collapse
+a:before,
+a:after {
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.navbar-collapse a,
+a:before,
+a:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.navbar-collapse a:hover{
+  color: #fff;
+  text-decoration: none;
+}
 
 .navbar-toggle{
-    text-align: center;
-    z-index: 21;
-    background-color: rgb(255, 255, 255);
-  }
+  text-align: center;
+  z-index: 21;
+  background-color: rgb(255, 255, 255);
+}
 @media (min-width: 680px) {
   .navbar-toggle{
     display: none;
   }
 }
+
 .main{
   background: url("../img/headerimg.png");
   /* background-size: cover; */
@@ -86,11 +131,12 @@ header h1{
   position: relative;
   padding: 0;
   background-color: #2e3438;
-  min-height: 312px; 
+  min-height: 312px;
+  color: #fff;
 }
-.thumbnail img{
-  position: absolute;
-  top:0;
+.thumbnail:hover {
+  background-color: #42474a;
+  color: #222;
 }
 .thumbnail .caption{
   position: absolute;
