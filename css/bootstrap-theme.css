@@ -5,7 +5,7 @@ body{
 }
 
 section{
-  margin: 120px auto;
+  margin: 40px auto;
 }
 
 section h1{
@@ -15,8 +15,14 @@ header h1{
   font-size: 24px;
 }
 .navbar-default{
-   background: none; 
+   background-color: #2e3438; 
    border: none; 
+   margin: 0;
+   position: fixed;
+   top:0;
+   width: 100%;
+   
+    z-index: 30;
 }
 .navbar-right{
  /* position: fixed;
@@ -27,7 +33,6 @@ header h1{
 }
 @media (min-width: 680px) {
   .navbar-right{
-    position: fixed;
     top: 10px;
     right: 150px;
     font-size: 20px;
@@ -35,19 +40,11 @@ header h1{
   }
 }
 .navbar-collapse{
-    position: fixed;
-    top: 68px;
-    left: 20px;
-    width: 100%;
     text-align: center;
     z-index: 21;
-    background-color: rgb(255, 255, 255);
   }
 
 .navbar-toggle{
-    position: fixed;
-    top: 10px;
-    right: 10px;
     text-align: center;
     z-index: 21;
     background-color: rgb(255, 255, 255);
@@ -57,14 +54,16 @@ header h1{
     display: none;
   }
 }
-.container-fluid .logo{
-  margin-top: 20px;
+.main{
+  background: url("../img/headerimg.png");
+  /* background-size: cover; */
+  height: 300px;
+  margin-top: 50px;
 }
 
 .members h1{
   font-size: 32px;
   color: #fff;
-  margin-top: -75px;
   margin-bottom: 5px;
 }
 .members .muted{
